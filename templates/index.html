@@ -1,0 +1,35 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Платформа накрутки</title>
+</head>
+<body>
+    <h1>Платформа накрутки</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Загрузить аккаунты">
+    </form>
+    <br>
+    <form action="/start_promotion" method="post">
+        <select name="social_network">
+            <option value="vk">VK</option>
+            <option value="twitter">Twitter</option>
+            <option value="instagram">Instagram</option>
+            <option value="youtube">YouTube</option>
+        </select>
+        <br>
+        <select name="promotion_type">
+            <option value="likes">Лайки</option>
+        </select>
+        <br>
+        <input type="text" name="link" placeholder="URL объекта">
+        <br>
+        <input type="number" name="times" placeholder="Время между лайками (в секундах)">
+        <br>
+        <input type="submit" value="Начать накрутку">
+    </form>
+    <br>
+    <a href="/report">Посмотреть отчет</a>
+</body>
+</html>

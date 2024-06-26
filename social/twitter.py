@@ -1,4 +1,3 @@
-# social/twitter.py
 from selenium.webdriver.common.by import By
 import time
 

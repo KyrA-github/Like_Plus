@@ -1,4 +1,3 @@
-# app.py
 import json
 import time
 import os

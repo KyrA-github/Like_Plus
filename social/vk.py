@@ -9,7 +9,6 @@ class VK:
 
     def entrance(self, number):
         self.browser.get('https://vk.com')
-
         user_login = self.browser.find_element(By.ID, 'index_email')
         user_login.send_keys(self.login[number])
         
@@ -24,11 +23,10 @@ class VK:
         button_login = self.browser.find_element(By.CSS_SELECTOR, 'button[type="submit"]')
         button_login.click()
 
-        time.sleep(5)  
+        time.sleep(5)
 
     def likes(self, link):
         self.browser.get(link)
-        button_login = self.browser.find_element(By.CLASS_NAME, 'like_button_icon')
-        button_login.click()
-
+        button_like = self.browser.find_element(By.CLASS_NAME, 'like_button_icon')
+        button_like.click()
         time.sleep(10)

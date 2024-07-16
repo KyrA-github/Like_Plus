@@ -1,4 +1,4 @@
-from selenium.webdriver.common.by import By
+from selenium.webdriver.common.by import By0
 import time
 
 class Twitter:
@@ -25,3 +25,4 @@ class Twitter:
         button_like = self.browser.find_element(By.CSS_SELECTOR, 'div[data-testid="like"]')
         button_like.click()
         time.sleep(10)
+

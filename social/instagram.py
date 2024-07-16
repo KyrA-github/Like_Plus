@@ -27,3 +27,4 @@ class Instagram:
         button_like = self.browser.find_element(By.CSS_SELECTOR, 'span[aria-label="Like"]')
         button_like.click()
         time.sleep(10)
+

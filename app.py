@@ -12,7 +12,7 @@ from social.youtube import YouTube
 
 app = Flask(__name__)
 options = Options()
-options.add_argument("--headless")  # Безголовый режим для работы без интерфейса браузера
+options.add_argument("--headless") 
 
 @app.route('/')
 def index():
@@ -76,8 +76,8 @@ def start_promotion():
 
 @app.route('/report')
 def report():
-    # Здесь можно реализовать функционал отчета
     return "Отчет пока не реализован."
 
 if __name__ == '__main__':
     app.run(debug=True)
+

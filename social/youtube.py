@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 import time
 
+
 class YouTube:
     def __init__(self, browser, login, password):
         self.browser = browser
